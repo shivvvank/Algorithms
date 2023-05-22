@@ -1,22 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
-int c = 0;
-void PrintName5Times(string name)
+void PrintNameNTimes(string name,int i,int n)
 {
-    if(c==5)
+    if(i>n)
         return;
     cout<<name<<endl;
-    c++;
-    PrintName5Times(name);
+    PrintNameNTimes(name,i+1,n);   
 }
-
 // Driver Code
 int main()
 {   
     string name;
+    int n;
     cout<<"Enter Name : ";
     cin>>name;
+    cout<<"Enter n : ";
+    cin>>n;
     cout<<endl;
-    PrintName5Times(name);
+    PrintNameNTimes(name,1,n);
     return 0;
 }
+/*
+    time : O(n)
+    space : O(n)
+*/
