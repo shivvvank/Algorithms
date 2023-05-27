@@ -24,9 +24,9 @@ void PrintSubsqWithSumk(int *a,int i,int n,int k,vector<int> v,int sum)
 }
 int main()
 {
-    int a[]={1,2,1};
+    int a[] = {1,2,3,2,4,1,2,1};
     int sum = 0;
     vector<int> v;
-    PrintSubsqWithSumk(a,0,3,2,v,sum);
+    PrintSubsqWithSumk(a,0,8,5,v,sum);
     return 0;
 }
