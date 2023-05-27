@@ -39,8 +39,8 @@ void QuickSort(int * a, int low,int high)
 }
 int main()
 {
-    int a[]={1,3,4,3,1,2,4,3,8,7};
-    // int a[] = {4,6,2,5,7,9,1,3}; 
+    // int a[]={1,3,4,3,1,2,4,3,8,7};
+    int a[] = {4,6,2,5,7,9,1,3}; 
     int n = sizeof(a)/sizeof(int);
     cout<<"Unsorted"<<endl;
     for(auto i:a)
