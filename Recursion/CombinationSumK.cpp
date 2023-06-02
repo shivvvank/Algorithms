@@ -10,13 +10,13 @@ void helper(int *a,int n,int i,int sum,vector<int> v,set<vector<int>> &s)
         }
         return;
     }
-    if(sum<0)
-        return;
     helper(a,n,i+1,sum,v,s);
-    sum -=a[i];
-    v.push_back(a[i]);
-    helper(a,n,i,sum,v,s);
-    helper(a,n,i+1,sum,v,s);
+    if(sum>=a[i])
+    {
+        sum -=a[i];
+        v.push_back(a[i]);
+        helper(a,n,i,sum,v,s);
+    }
 }
 void PrintCombination(int *a,int n,int k,set<vector<int>> &s)
 {
