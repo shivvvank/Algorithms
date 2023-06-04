@@ -17,6 +17,7 @@ int main()
     int n = sizeof(a)/sizeof(int);
     vector<int> sumsubs;
     FindSubsetSum(a,n,0,0,sumsubs);
+    sort(sumsubs.begin(),sumsubs.end());
     for(auto i : sumsubs)
     {
         cout<<i<<" ";
